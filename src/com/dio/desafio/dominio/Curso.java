@@ -24,11 +24,11 @@ public class Curso extends Conteudo{
 
     public StringBuffer exibir(){
         StringBuffer sb = new StringBuffer();
-        sb.append("[ ").
-                append("Título: "+getTitulo()).
-                append(" / Descrição: "+getDescricao()).
-                append(" / Carga Horária: "+getCargaHoraria()).
-                append(" ]");
+        sb.append("[ ")
+                .append("Título: "+getTitulo())
+                .append(" / Descrição: "+getDescricao())
+                .append(" / Carga Horária: "+getCargaHoraria())
+                .append(" ]");
                 System.out.println(sb);
         return sb;
     }
