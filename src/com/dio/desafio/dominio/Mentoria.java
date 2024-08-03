@@ -23,4 +23,9 @@ public class Mentoria extends Conteudo{
     public double calcularXp() {
         return XP_PADRAO * 20;
     }
+
+    @Override
+    public String toString() {
+        return super.toString()+ " / Data: '"+data+"' ]";
+    }
 }

@@ -22,14 +22,8 @@ public class Curso extends Conteudo{
         return XP_PADRAO * cargaHoraria;
     }
 
-    public StringBuffer exibir(){
-        StringBuffer sb = new StringBuffer();
-        sb.append("[ ")
-                .append("Título: "+getTitulo())
-                .append(" / Descrição: "+getDescricao())
-                .append(" / Carga Horária: "+getCargaHoraria())
-                .append(" ]");
-                System.out.println(sb);
-        return sb;
+    @Override
+    public String toString() {
+        return super.toString() + " Carga Horária: '"+cargaHoraria+"' ]";
     }
 }
